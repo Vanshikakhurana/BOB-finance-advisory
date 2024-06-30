@@ -28,7 +28,7 @@ AI-Driven Insights: Get personalized tips and insights based on your spending ha
 Financial Health Score: Monitor your financial health with an easy-to-understand score and receive advice on how to improve it.
 
 
--Innovative Features :
+- Innovative Features :
 
 Voice Commands: Use voice commands to check balances, make transfers, and more.
 
