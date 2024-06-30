@@ -1,5 +1,6 @@
 BOBPilot 🧩 :  is  a money management app that  offers a comprehensive suite of features designed to make managing your finances easier, more efficient, and more secure than ever before. Here are some reasons why you should choose our app over others:
 
+![PennyPilot](https://github.com/Vanshikakhurana/BOB-finance-advisory/assets/100332666/1027e4c6-114f-41bc-894f-2543129e322d)
 
 - All-in-One Solution :
 
@@ -37,4 +38,4 @@ Automated Savings: Enable automated savings plans based on your spending and inc
 Cashback and Rewards: Earn cashback and rewards for using certain linked credit cards and accounts.
 
 
-![PennyPilot](https://github.com/Vanshikakhurana/BOB-finance-advisory/assets/100332666/1027e4c6-114f-41bc-894f-2543129e322d)
+
