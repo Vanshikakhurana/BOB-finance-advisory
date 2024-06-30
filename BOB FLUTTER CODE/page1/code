@@ -1,0 +1,64 @@
+import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
+
+void main() {
+  runApp(MyApp());
+}
+
+class MyApp extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    SystemChrome.setSystemUIOverlayStyle(SystemUiOverlayStyle.light);
+    return MaterialApp(
+      debugShowCheckedModeBanner: false,
+      home: SplashScreen(),
+    );
+  }
+}
+
+class SplashScreen extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      backgroundColor: Color(0xFF081C0F), // Dark background color
+      body: Stack(
+        children: [
+          Center(
+            child: Image.asset(
+              'Logo.png', // Replace with the path to your logo image
+              width: 200,
+            ),
+          ),
+          Positioned(
+            top: 40,
+            left: 20,
+            child: Row(
+              children: [
+                Text(
+                  '9:41',
+                  style: TextStyle(
+                    color: Colors.white,
+                    fontSize: 18,
+                  ),
+                ),
+              ],
+            ),
+          ),
+          Positioned(
+            top: 40,
+            right: 20,
+            child: Row(
+              children: [
+                Icon(Icons.signal_cellular_alt, color: Colors.white, size: 18),
+                SizedBox(width: 5),
+                Icon(Icons.wifi, color: Colors.white, size: 18),
+                SizedBox(width: 5),
+                Icon(Icons.battery_full, color: Colors.white, size: 18),
+              ],
+            ),
+          ),
+        ],
+      ),
+    );
+  }
+}

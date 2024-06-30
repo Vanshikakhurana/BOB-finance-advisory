@@ -1,0 +1,91 @@
+import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
+
+void main() {
+  runApp(MyApp());
+}
+
+class MyApp extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    SystemChrome.setSystemUIOverlayStyle(SystemUiOverlayStyle.light);
+    return MaterialApp(
+      debugShowCheckedModeBanner: false,
+      home: FaceScanningScreen(),
+    );
+  }
+}
+
+class FaceScanningScreen extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      body: Stack(
+        children: [
+          // Background Image
+          Positioned.fill(
+            child: Image.asset(
+              'assets/face_scan.png',
+              fit: BoxFit.cover,
+            ),
+          ),
+          // Status Bar
+          Positioned(
+            top: 40,
+            left: 20,
+            child: Row(
+              children: [
+                Text(
+                  '9:41',
+                  style: TextStyle(
+                    color: Colors.white,
+                    fontSize: 18,
+                  ),
+                ),
+              ],
+            ),
+          ),
+          Positioned(
+            top: 40,
+            right: 20,
+            child: Row(
+              children: [
+                Icon(Icons.signal_cellular_alt, color: Colors.white, size: 18),
+                SizedBox(width: 5),
+                Icon(Icons.wifi, color: Colors.white, size: 18),
+                SizedBox(width: 5),
+                Icon(Icons.battery_full, color: Colors.white, size: 18),
+              ],
+            ),
+          ),
+          // Overlay
+          Positioned.fill(
+            child: Column(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: [
+                Spacer(),
+                // Progress Indicator
+                CircularProgressIndicator(
+                  value: 0.5,
+                  valueColor: AlwaysStoppedAnimation<Color>(Colors.green),
+                  backgroundColor: Colors.white.withOpacity(0.5),
+                ),
+                SizedBox(height: 20),
+                Text(
+                  'Scanning your face',
+                  style: TextStyle(color: Colors.white, fontSize: 20),
+                ),
+                SizedBox(height: 10),
+                Text(
+                  'Focus on your camera and hold still',
+                  style: TextStyle(color: Colors.white, fontSize: 16),
+                ),
+                Spacer(),
+              ],
+            ),
+          ),
+        ],
+      ),
+    );
+  }
+}
