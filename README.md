@@ -35,3 +35,6 @@ Voice Commands: Use voice commands to check balances, make transfers, and more.
 Automated Savings: Enable automated savings plans based on your spending and income patterns.
 
 Cashback and Rewards: Earn cashback and rewards for using certain linked credit cards and accounts.
+
+
+![PennyPilot](https://github.com/Vanshikakhurana/BOB-finance-advisory/assets/100332666/1027e4c6-114f-41bc-894f-2543129e322d)
